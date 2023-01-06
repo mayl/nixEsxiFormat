@@ -23,7 +23,6 @@
     packages.x86_64-linux.testVM = nixos-generators.nixosGenerate {
       format = "vm";
       system = "x86_64-linux";
-      customFormats = self.customFormats;
       modules = [
         ({pkgs, ...}: {
           environment.systemPackages = with pkgs; [ cowsay ];
